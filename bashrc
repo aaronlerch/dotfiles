@@ -1,12 +1,12 @@
 . ~/.aliases
 . ~/.functions
 
-if [ -f $BOXEN_HOME/env.sh ]; then
-  . $BOXEN_HOME/env.sh
+if [ -f /opt/boxen/env.sh ]; then
+  . /opt/boxen/env.sh
 fi
 
-if [ -f $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
-  . $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh
+if [ -f /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
+  . /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh
 fi
 
 . ~/.prompt
