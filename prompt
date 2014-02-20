@@ -1,11 +1,6 @@
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 
-# Load the git-prompt helpers
-if [ -f $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
-  source $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh
-fi
-
 #  SETUP CONSTANTS
 #  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
 #  I don't remember where I found this.  o_O

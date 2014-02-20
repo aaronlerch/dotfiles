@@ -1,8 +1,12 @@
-source ~/.aliases
-source ~/.functions
+. ~/.aliases
+. ~/.functions
 
 if [ -f $BOXEN_HOME/env.sh ]; then
-  source $BOXEN_HOME/env.sh
+  . $BOXEN_HOME/env.sh
 fi
 
-source ~/.prompt
+if [ -f $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
+  . $BOXEN_HOME/homebrew/etc/bash_completion.d/git-prompt.sh
+fi
+
+. ~/.prompt
