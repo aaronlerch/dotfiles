@@ -9,4 +9,8 @@ if [ -f /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
   . /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh
 fi
 
+# Enable color file listings
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 . ~/.prompt
