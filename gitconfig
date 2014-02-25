@@ -20,3 +20,5 @@
 
 [hub]
 protocol = https
+[mergetool]
+	keepBackup = true

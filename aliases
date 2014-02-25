@@ -1,2 +1,3 @@
 alias ll='ls -al'
 alias agi='ag -i'
+alias subl=subl3
