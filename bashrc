@@ -18,6 +18,6 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # editor settings
-export EDITOR='subl -w'
+export EDITOR='subl3 -w'
 
 source ~/.prompt
