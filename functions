@@ -5,3 +5,12 @@ success() {
 fail() {
   (blink1 --rgb 0xff,0,0 --blink 3 > /dev/null &)
 }
+
+gif() {
+  if [[ -n "$1" && -n "$2" ]]; then
+    ffmpeg -i $1 -pix_fmt rgb24 -f gif - | gifsicle -O3 -d3 > $2
+  else
+    echo "usage: gif <input.mov> <output.gif>"
+    echo "(Include extensions)"
+  fi
+}
