@@ -2,3 +2,4 @@ alias ll='ls -al'
 alias agi='ag -i'
 alias subl=subl3
 alias gl='git log --pretty=oneline'
+alias migrate='bundle exec rake db:migrate'
