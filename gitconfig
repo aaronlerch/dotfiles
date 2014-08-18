@@ -6,6 +6,8 @@
   co = checkout
   br = branch
   com = commit
+  lol = log --format=oneline
+  cob = checkout -b
 [core]
 	excludesfile = /opt/boxen/config/git/gitignore
 [credential]
@@ -28,3 +30,5 @@ protocol = https
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[fetch]
+	prune = true
