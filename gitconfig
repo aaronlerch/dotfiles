@@ -8,6 +8,7 @@
   com = commit
   lol = log --format=oneline
   cob = checkout -b
+  comfi = diff-tree --no-commit-id --name-only -r
 [core]
 	excludesfile = /opt/boxen/config/git/gitignore
 [credential]
