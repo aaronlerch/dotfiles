@@ -9,6 +9,9 @@
   lol = log --format=oneline
   cob = checkout -b
   comfi = diff-tree --no-commit-id --name-only -r
+  undo = reset HEAD~1 --mixed
+  amend = commit -a --amend
+  bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
 [core]
 	excludesfile = /opt/boxen/config/git/gitignore
 [credential]
@@ -33,3 +36,9 @@ protocol = https
 	trustExitCode = true
 [fetch]
 	prune = true
+[rerere]
+	enabled = true
+[heroku]
+	account = personal
+[init]
+	templatedir = ~/.git_template
