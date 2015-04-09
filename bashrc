@@ -13,6 +13,9 @@ if [ -f /opt/boxen/homebrew/etc/bash_completion.d/git-completion.bash ]; then
   source /opt/boxen/homebrew/etc/bash_completion.d/git-completion.bash
 fi
 
+# Enable hiding entries prefixed with a space
+export HISTCONTROL=ignorespace
+
 # Enable color file listings
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
