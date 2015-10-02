@@ -1,3 +1,5 @@
 alias subl="subl3"
 alias agi="ag -i"
 alias creep="say -v whisper"
+alias blink1="blink1-tool"
+alias blink="blink1-tool"
