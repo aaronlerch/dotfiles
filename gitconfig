@@ -41,4 +41,4 @@ protocol = https
 [heroku]
 	account = personal
 [init]
-	templatedir = ~/.git_template
+#	templatedir = ~/.git_template
