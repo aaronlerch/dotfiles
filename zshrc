@@ -45,7 +45,7 @@ ZSH_CUSTOM=~/.dotfiles/zshcustom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler git-flow pow rails sublime rbenv ruby screen sudo)
+plugins=(git bundler git-flow pow rails sublime rbenv ruby screen sudo docker docker-compose)
 
 # User configuration
 
@@ -80,3 +80,11 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Ensure docker-machine default is launched and running, and that
+# the default image env has been imported.
+# The first time this runs it can take a bit to spin up Vbox,
+# but each subsequent shell should be very fast.
+
+docker-machine start default
+eval "$(docker-machine env default)"
