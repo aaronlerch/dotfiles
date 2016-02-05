@@ -36,6 +36,8 @@ protocol = https
 	trustExitCode = true
 [fetch]
 	prune = true
+[rebase]
+  autosquash = true
 [rerere]
 	enabled = true
 [heroku]
