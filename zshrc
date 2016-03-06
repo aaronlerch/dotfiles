@@ -86,5 +86,5 @@ fi
 # The first time this runs it can take a bit to spin up Vbox,
 # but each subsequent shell should be very fast.
 
-docker-machine start default
-eval "$(docker-machine env default)"
+# docker-machine start default
+# eval "$(docker-machine env default)"
