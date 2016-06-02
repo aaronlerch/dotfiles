@@ -52,9 +52,11 @@ plugins=(git bundler git-flow pow rails sublime rbenv ruby screen sudo docker do
 # export PATH="/opt/boxen/phpenv/shims:/opt/boxen/phpenv/bin:/opt/boxen/phpenv/plugins/php-build/bin:bin:/opt/boxen/homebrew/share/python:/opt/boxen/heroku/bin:/opt/boxen/rbenv/shims:/opt/boxen/rbenv/bin:/opt/boxen/ruby-build/bin:/opt/boxen/phantomenv/shims:/opt/boxen/phantomenv/bin:node_modules/.bin:/opt/boxen/nodenv/shims:/opt/boxen/nodenv/bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source /opt/boxen/env.sh
+test -e "/opt/boxen/env.sh" && source "/opt/boxen/env.sh"
 
-source $ZSH/oh-my-zsh.sh
+test -e "${ZSH}/oh-my-zsh.sh" && source "${ZSH}/oh-my-zsh.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -88,3 +90,4 @@ fi
 
 # docker-machine start default
 # eval "$(docker-machine env default)"
+
