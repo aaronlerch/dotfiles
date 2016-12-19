@@ -62,7 +62,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='subl3 -w'
+  # export EDITOR='subl3 -w'
+  # Putting back to vim until, well, probably forever.
+  export EDITOR='vim'
 fi
 
 # Compilation flags
