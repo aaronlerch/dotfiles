@@ -1,0 +1,3 @@
+[submodule "zshcustom/plugins/zsh-nvm"]
+	path = zshcustom/plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git
