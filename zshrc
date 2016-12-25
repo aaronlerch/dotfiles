@@ -89,3 +89,5 @@ fi
 
 # docker-machine start default
 # eval "$(docker-machine env default)"
+
+eval "$(rbenv init -)"

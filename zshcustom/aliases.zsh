@@ -3,6 +3,7 @@ alias agi="ag -i"
 alias creep="say -v whisper"
 alias blink1="blink1-tool"
 alias blink="blink1-tool"
+
 alias doco="docker-compose"
 alias docos="docker-compose -f docker-compose.yml -f docker-compose-sync.yml"
 alias docor="docker-compose run"
