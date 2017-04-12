@@ -4,9 +4,10 @@ alias creep="say -v whisper"
 alias blink1="blink1-tool"
 alias blink="blink1-tool"
 
-alias scala='docker run -it --rm -v `pwd`:/usr/src -w /usr/src williamyeh/scala'
+#alias scala='docker run -it --rm -v `pwd`:/usr/src -w /usr/src williamyeh/scala'
 #alias sbt='docker run -it --rm -v `pwd`:/app -w /app williamyeh/sbt'
 #alias sbt='docker run -it --rm -v `pwd`:/app -w /app latestsbt'
+alias scala='docker run -it --rm frolvlad/alpine-scala scala'
 
 alias doco="docker-compose"
 alias docos="docker-compose -f docker-compose.yml -f docker-compose-sync.yml"

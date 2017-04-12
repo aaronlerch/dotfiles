@@ -90,4 +90,9 @@ fi
 # docker-machine start default
 # eval "$(docker-machine env default)"
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
+
+export KOPS_STATE_STORE=s3://clusters.ops.demandjump.net
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
