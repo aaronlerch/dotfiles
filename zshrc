@@ -92,7 +92,7 @@ fi
 
 # eval "$(rbenv init -)"
 
-export KOPS_STATE_STORE=s3://clusters.ops.demandjump.net
+export KOPS_STATE_STORE=s3://clusters.demandjump.net
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
