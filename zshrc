@@ -97,3 +97,7 @@ export KOPS_STATE_STORE=s3://clusters.demandjump.net
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+if [ -d "${HOME}/go/bin" ] ; then
+  export PATH="$PATH:${HOME}/go/bin"
+fi
