@@ -1,3 +1,13 @@
+function markKinesis() {
+  STREAM_NAME=${1:-dev.snowplow.good}
+  export SHARD_ITERATOR=$(aws kinesis get-shard-iterator --shard-id shardId-000000000000 --shard-iterator-type LATEST --stream-name ${STREAM_NAME} --query 'ShardIterator')
+}
+
+function getKinesis() {
+  LIMIT=${1:-5}
+  aws kinesis get-records --limit ${LIMIT} --shard-iterator ${SHARD_ITERATOR}
+}
+
 function dockbuild() {
   docker build -t $1 .
 }
