@@ -93,6 +93,8 @@ fi
 
 # eval "$(rbenv init -)"
 
+export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
+
 export KOPS_STATE_STORE=s3://clusters.demandjump.net
 
 export NVM_DIR="$HOME/.nvm"
