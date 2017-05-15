@@ -91,6 +91,9 @@ fi
 # docker-machine start default
 # eval "$(docker-machine env default)"
 
+# Need to include the user-specific shim dir, as
+# rbenv init only prepends the /usr/local/opt path
+export PATH="${HOME}/.rbenv/shims:${PATH}"
 eval "$(rbenv init -)"
 
 export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
