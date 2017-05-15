@@ -91,7 +91,7 @@ fi
 # docker-machine start default
 # eval "$(docker-machine env default)"
 
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
 
