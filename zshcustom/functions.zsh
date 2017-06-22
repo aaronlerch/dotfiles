@@ -1,3 +1,9 @@
+function kb() {
+  POD_NAME=$(kubectl get pods --selector=app=$1 -o jsonpath='{.items[0].metadata.name}')
+  echo "connecting to pod ${POD_NAME}"
+  kubectl exec -it ${POD_NAME} -- /bin/bash
+}
+
 function markKinesis() {
   STREAM_NAME=${1:-dev.snowplow.good}
   export SHARD_ITERATOR=$(aws kinesis get-shard-iterator --shard-id shardId-000000000000 --shard-iterator-type LATEST --stream-name ${STREAM_NAME} --query 'ShardIterator')
