@@ -10,6 +10,8 @@ alias blink="blink1-tool"
 #alias sbt='docker run -it --rm -v `pwd`:/app -w /app latestsbt'
 alias scala='docker run -it --rm frolvlad/alpine-scala scala'
 
+alias webhere='docker run -it --rm -v `pwd`:/usr/share/nginx/html:ro -p 8080:80 nginx'
+
 alias doco="docker-compose"
 alias docos="docker-compose -f docker-compose.yml -f docker-compose-sync.yml"
 alias docor="docker-compose run"
