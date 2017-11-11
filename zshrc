@@ -93,8 +93,8 @@ fi
 
 # Need to include the user-specific shim dir, as
 # rbenv init only prepends the /usr/local/opt path
-export PATH="${HOME}/.rbenv/shims:${PATH}"
-eval "$(rbenv init -)"
+#export PATH="${HOME}/.rbenv/shims:${PATH}"
+#eval "$(rbenv init -)"
 
 #export NVM_DIR="$HOME/.nvm"
 #. "/usr/local/opt/nvm/nvm.sh"
