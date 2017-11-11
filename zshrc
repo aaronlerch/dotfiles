@@ -96,13 +96,11 @@ fi
 export PATH="${HOME}/.rbenv/shims:${PATH}"
 eval "$(rbenv init -)"
 
-export SBT_CREDENTIALS="$HOME/.sbt/.credentials"
-
-export KOPS_STATE_STORE=s3://clusters.demandjump.net
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#. "/usr/local/opt/nvm/nvm.sh"
 
 if [ -d "${HOME}/go/bin" ] ; then
   export PATH="$PATH:${HOME}/go/bin"
 fi
+
+source /Users/aaron/src/InVision_Docker/scripts-native/invision.sh
