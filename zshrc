@@ -102,5 +102,3 @@ fi
 if [ -d "${HOME}/go/bin" ] ; then
   export PATH="$PATH:${HOME}/go/bin"
 fi
-
-source /Users/aaron/src/InVision_Docker/scripts-native/invision.sh
