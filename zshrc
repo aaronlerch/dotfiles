@@ -96,9 +96,11 @@ fi
 #export PATH="${HOME}/.rbenv/shims:${PATH}"
 eval "$(rbenv init -)"
 
-#export NVM_DIR="$HOME/.nvm"
-#. "/usr/local/opt/nvm/nvm.sh"
-
 if [ -d "${HOME}/go/bin" ] ; then
   export PATH="$PATH:${HOME}/go/bin"
+fi
+
+if [ -d "${HOME}/src/kubectl-config" ] ; then
+  export INVISION_KUBECTL_CONFIG_PATH="${HOME}/src/kubectl-config"
+  source "${INVISION_KUBECTL_CONFIG_PATH}/kubectl.sh"
 fi
