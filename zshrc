@@ -100,6 +100,10 @@ if [ -d "${HOME}/go/bin" ] ; then
   export PATH="$PATH:${HOME}/go/bin"
 fi
 
+if [ -d "/usr/local/opt/openjdk/bin" ] ; then
+  export PATH="/usr/local/opt/openjdk/bin:$PATH"
+fi
+
 if [ -d "${HOME}/src/kubectl-config" ] ; then
   export INVISION_KUBECTL_CONFIG_PATH="${HOME}/src/kubectl-config"
   source "${INVISION_KUBECTL_CONFIG_PATH}/kubectl.sh"
