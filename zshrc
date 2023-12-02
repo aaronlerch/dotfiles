@@ -104,11 +104,9 @@ if [ -d "/usr/local/opt/openjdk/bin" ] ; then
   export PATH="/usr/local/opt/openjdk/bin:$PATH"
 fi
 
-if [ -d "${HOME}/src/kubectl-config" ] ; then
-  export INVISION_KUBECTL_CONFIG_PATH="${HOME}/src/kubectl-config"
-  source "${INVISION_KUBECTL_CONFIG_PATH}/kubectl.sh"
-fi
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
