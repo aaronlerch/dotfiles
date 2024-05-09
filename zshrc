@@ -110,3 +110,5 @@ export NVM_DIR="$HOME/.nvm"
 
 #export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

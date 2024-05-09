@@ -6,6 +6,7 @@ alias migrate='bundle exec rake db:migrate'
 alias creep='say -v whisper'
 alias blink1=blink1-tool
 alias blink=blink1-tool
+alias docker=podman
 
 alias yarn="newt exec yarn"
 alias npm="newt exec npm"
