@@ -10,3 +10,5 @@ alias docker=podman
 
 alias yarn="newt exec yarn"
 alias npm="newt exec npm"
+
+alias gam="$HOME/bin/gam7/gam"
