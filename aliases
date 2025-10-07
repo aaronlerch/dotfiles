@@ -1,6 +1,5 @@
 alias ll='ls -al'
 alias agi='ag -i'
-alias subl=subl3
 alias gl='git log --pretty=oneline'
 alias migrate='bundle exec rake db:migrate'
 alias creep='say -v whisper'
@@ -8,7 +7,7 @@ alias blink1=blink1-tool
 alias blink=blink1-tool
 alias docker=podman
 
-alias yarn="newt exec yarn"
-alias npm="newt exec npm"
+alias yarn='newt exec yarn'
+alias npm='newt exec npm'
 
-alias gam="$HOME/bin/gam7/gam"
+alias gam7='$HOME/bin/gam7/gam'
