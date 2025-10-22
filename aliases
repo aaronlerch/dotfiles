@@ -7,7 +7,4 @@ alias blink1=blink1-tool
 alias blink=blink1-tool
 alias docker=podman
 
-alias yarn='newt exec yarn'
-alias npm='newt exec npm'
-
 alias gam7='$HOME/bin/gam7/gam'
